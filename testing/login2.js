@@ -47,14 +47,12 @@ async function Login(driver, testemail){
   }
 
   const industry = await driver.findElement(By.css(".mat-autocomplete-trigger"));
-
   await Click(driver, industry);
 
   const eletronics = await waitForElementRender(driver, "#mat-option-4 > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)");
-
   await Click(driver, eletronics);
 
-  const countryCodeDropdown = await driver.findElement(By.css("[formcontrolname='countryPhoneCode'] .select-text"));
+  const countryCodeDropdown = await driver.findElement(By.css("pe-select-phone-code"));
   await Click(driver, countryCodeDropdown);
   
   const dropdownOption = await driver.findElement(By.css("peb-select-option:nth-of-type(98)"));

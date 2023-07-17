@@ -12,7 +12,7 @@ async function test1(){
 
 
   //Login
-  await Login(driver, "bilalqa@gmail.com");
+  await Login(driver, "testingnewqa123@gmail.com");
 
   let names = await Validate(driver);
 

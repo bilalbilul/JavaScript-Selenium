@@ -11,7 +11,7 @@ async function test2(){
   await driver.get("https://commerceos.staging.devpayever.com/registration/santander");
 
   //Login
-  await Login(driver, "bilalqa@gmail.com");
+  await Login(driver, "mawar123@gmail.com");
 
   let names = await Validate(driver);
 
