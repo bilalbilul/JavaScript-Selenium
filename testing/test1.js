@@ -10,6 +10,8 @@ async function test1(){
 
   await driver.get("https://commerceos.staging.devpayever.com/registration/fashion");
 
+
+  //Login
   await Login(driver, "bilalqa@gmail.com");
 
   let names = await Validate(driver);
@@ -58,7 +60,7 @@ async function test1(){
 
   setInterval(function(){
     driver.quit();
-  }, 1000);
+  }, 10000);
 }
 
 test1();

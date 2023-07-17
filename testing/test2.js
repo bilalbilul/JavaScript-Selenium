@@ -10,6 +10,7 @@ async function test2(){
 
   await driver.get("https://commerceos.staging.devpayever.com/registration/santander");
 
+  //Login
   await Login(driver, "bilalqa@gmail.com");
 
   let names = await Validate(driver);
@@ -46,7 +47,7 @@ async function test2(){
 
   setInterval(function(){
     driver.quit();
-  }, 1000);
+  }, 10000);
 }
 
 test2();

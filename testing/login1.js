@@ -4,7 +4,7 @@ const { waitForElementRender, SendKey, Click } = require("./function");
 
 
 async function Login(driver, testemail){
-
+// FIll information user
   try{
     const FirstnameInput = await waitForElementRender(driver, "input.ng-tns-c170-1")
 
@@ -34,6 +34,8 @@ async function Login(driver, testemail){
 
   await Click(driver, ConfirmButton);
 
+
+  // FIll Business Information
   try{
     const CompanyName = await waitForElementRender(driver,  "span.ng-tns-c170-8");
 
